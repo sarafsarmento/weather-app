@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Search from "./Search";
 import Overview from "./Overview";
@@ -7,24 +6,29 @@ import Temperature from "./Temperature";
 import WeatherDetails from "./WeatherDetails";
 import Forecast from "./Forecast";
 import GithubLink from "./GithubLink";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function App() {
   return (
-    <div className="container">
+    <Container fluid>
       <div className="wrapper">
         <div className="weather-wrapper">
-          <Search />
+          <Row>
+            <Search />
+          </Row>
           <Overview />
-          <div className="row">
-            <Temperature />
-            <WeatherDetails />
-          </div>
-          <div className="row weather-forecast" id="forecast" />
-          <Forecast />
+          <Row>
+            <Temperature /> <WeatherDetails />
+          </Row>
+          <Row>
+            <div className="weather-forecast" id="forecast" />
+            <Forecast />
+          </Row>
+          <GithubLink />
         </div>
-        <GithubLink />
       </div>
-    </div>
+    </Container>
   );
 }
 

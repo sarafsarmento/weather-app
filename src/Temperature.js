@@ -1,8 +1,10 @@
 import React from "react";
+import axios from "axios";
+import Col from "react-bootstrap/Col";
 
 export default function Temperature() {
   return (
-    <div className="col-6">
+    <Col sm={6}>
       <div className="clearfix weather-temperature">
         <img
           src="https://sad-aryabhata-ad11d0.netlify.com/media/04n@2x.png"
@@ -20,6 +22,6 @@ export default function Temperature() {
           </a>
         </span>
       </div>
-    </div>
+    </Col>
   );
 }

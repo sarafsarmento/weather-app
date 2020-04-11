@@ -1,28 +1,30 @@
 import React from "react";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
 
 export default function Search() {
   return (
     <div className="search">
-      <form id="search-form" class="mb-3">
-        <div className="row">
-          <div className="col-9">
-            <input
-              type="search"
+      <Form>
+        <Row>
+          <Col sm={9}>
+            <Form.Control
               placeholder="Type a city..."
-              class="form-control"
               id="city-input"
               autocomplete="off"
             />
+          </Col>
+          <div className="mb-2">
+            <Col sm={3}>
+              <Button variant="primary" type="submit" size="lg" active>
+                Search
+              </Button>
+            </Col>
           </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              class="btn btn-primary w-100 "
-            />
-          </div>
-        </div>
-      </form>
+        </Row>
+      </Form>
     </div>
   );
 }
