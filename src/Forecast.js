@@ -58,7 +58,7 @@ export default function Forecast() {
           </div>
         </Col>
         <Col sm={2}>
-          ><h3>00:0</h3>
+          <h3>00:0</h3>**
           <img
             src="https://sad-aryabhata-ad11d0.netlify.com/media/03n@2x.png"
             alt="overcast"
