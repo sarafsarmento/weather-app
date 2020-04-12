@@ -14,5 +14,6 @@ export default function WeatherDetails() {
         </li>
       </ul>
     </Col>
+    </Row>
   );
 }

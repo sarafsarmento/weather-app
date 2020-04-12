@@ -7,24 +7,16 @@ import WeatherDetails from "./WeatherDetails";
 import Forecast from "./Forecast";
 import GithubLink from "./GithubLink";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
 function App() {
   return (
     <Container fluid>
       <div className="wrapper">
         <div className="weather-wrapper">
-          <Row>
-            <Search />
-          </Row>
+          <Search />
           <Overview />
-          <Row>
-            <Temperature /> <WeatherDetails />
-          </Row>
-          <Row>
-            <div className="weather-forecast" id="forecast" />
-            <Forecast />
-          </Row>
+          <Temperature />
+          <Forecast />
           <GithubLink />
         </div>
       </div>
