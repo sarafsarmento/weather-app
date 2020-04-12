@@ -3,7 +3,6 @@ import "./App.css";
 import Search from "./Search";
 import Overview from "./Overview";
 import Temperature from "./Temperature";
-import WeatherDetails from "./WeatherDetails";
 import Forecast from "./Forecast";
 import GithubLink from "./GithubLink";
 import Container from "react-bootstrap/Container";
